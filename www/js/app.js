@@ -6,6 +6,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 .run(function($ionicPlatform, $rootScope, $state) {
 
   $ionicPlatform.on("deviceready", function(){
+	  debugger;
+	  alert(facebookConnectPlugin);
     facebookConnectPlugin.getLoginStatus(function(success){
       if(success.status === 'connected'){
         $state.go('app.feed');
