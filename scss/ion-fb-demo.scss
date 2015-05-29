@@ -1,0 +1,85 @@
+.ion-fb-login
+{
+  background-color: #435f99;
+  background-image: url(../img/ionFB.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .ion-fb-login-description
+  {
+    *
+    {
+      color:#F1F1F1;
+    }
+
+    .description-title
+    {
+      text-align:center;
+      color:#FFF;
+    }
+
+    p
+    {
+      margin-top:25px;
+    }
+  }
+
+  .ion-fb-login-buttons
+  {
+    margin: 10% 0px;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+  }
+}
+
+.ion-fb-side-menu
+{
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color:#4e69a2;
+
+  .col:first-child
+  {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .item
+  {
+    background-color: #4e69a2;
+    border-color: #223770;
+
+    .item-content
+    {
+      background-color: #4e69a2;
+      color: #f1f1f1;
+
+      h2.menu-text
+      {
+        color: #FFF;
+      }
+    }
+  }
+
+  .item-avatar
+  {
+    background-color: #FFF;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 80px;
+
+    img:first-child
+    {
+      top: 25px;
+      left: 16px;
+      width: 50px;
+      height: 50px;
+      max-width: inherit;
+      max-height: inherit;
+      border-radius: 50%;
+    }
+  }
+}

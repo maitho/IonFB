@@ -1,0 +1,20 @@
+<ion-view view-title="Likes">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-nav-title>
+    <p>Likes</p>
+  </ion-nav-title>
+  <ion-content has-header="true" padding="true">
+
+    <ion-refresher pulling-text="Pull to refresh..." on-refresh="doRefresh()">
+    </ion-refresher>
+
+    <div class="list">
+        <a ng-repeat="like in likes" class="item item-thumbnail-left" href="#">
+          <img ng-src="https://graph.facebook.com/{{like.id}}/picture?type=square&access_token={{user.access_token}}">
+          <h2>{{like.name}}</h2>
+        </a>
+    </div>
+  </ion-content>
+</ion-view>

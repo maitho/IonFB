@@ -1,0 +1,62 @@
+<ion-view view-title="Feed">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-nav-title>
+    <p>Share options</p>
+  </ion-nav-title>
+  <ion-content has-header="true" padding="true">
+
+    <div class="list card">
+      <div class="item item-image">
+        <img ng-src="{{image_to_share}}">
+      </div>
+      <a class="item item-icon-left assertive" href="#" ng-click="post_image()">
+        <i class="icon ion-share"></i>
+        Share to Facebook
+      </a>
+    </div>
+
+    <div class="list card">
+      <a class="item item-icon-left assertive" href="#" ng-click="post_status()">
+        <i class="icon ion-social-facebook"></i>
+        Post status
+      </a>
+    </div>
+
+    <div class="list card">
+      <a class="item item-icon-left assertive" href="#" ng-click="send_message()">
+        <i class="icon ion-chatbox-working"></i>
+        Send message to a friend
+      </a>
+    </div>
+
+    <div class="list card">
+      <a class="item item-icon-left assertive" href="#" ng-click="share_link()">
+        <i class="icon ion-link"></i>
+        Share a link
+      </a>
+    </div>
+
+
+
+
+    <!-- <div class="list list-inset">
+      <p>If you press this button a Facebook dialog will open and you will be able to write a status to post to your timeline</p>
+      <button class="button button-block button-positive" ng-click="post_status()">
+        Post status
+      </button>
+
+
+      <p>If you press this button a Facebook dialog will open and you will be able to share a link to your timeline</p>
+      <button class="button button-block button-positive" ng-click="share_link()">
+        Share link
+      </button>
+
+      <p>If you press this button a Facebook dialog will open and you will be able to share a link to your timeline</p>
+      <button class="button button-block button-positive" ng-click="send_message()">
+        Share link
+      </button>
+    </div> -->
+  </ion-content>
+</ion-view>

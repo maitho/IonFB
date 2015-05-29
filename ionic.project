@@ -1,0 +1,12 @@
+{
+  "name": "facebook_login",
+  "app_id": "cd6e5f24",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}
